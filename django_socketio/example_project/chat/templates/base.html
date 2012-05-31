@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
 <head>
-
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
     <meta charset="utf-8">
     <title>{% block title %}Chat{% endblock %}</title>
     <link rel="stylesheet" href="{{ STATIC_URL }}css/chat.css">
     {% block extra_css %}{% endblock %}
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="static/js/modernizr-2.5.3.custom.min.js"></script>
     <script>
         var showForm = function() {
             $('form').slideDown(function() {
